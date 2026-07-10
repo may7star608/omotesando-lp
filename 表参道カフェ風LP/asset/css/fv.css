@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/* ========== hero ========== */
+.hero {
+    background-color: var(--color-base-black);
+}
+
+.hero__container {
+    position: relative;
+}
+
+.heroImg__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroTtl__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.hero__title {
+    color: var(--font-color-white);
+    font-family: var(--en-font-reross);
+    font-size: var(--en-pc-size-large);
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+.hero__title--line {
+    display: block;
+}
+
+.hero__title--green {
+    color: var(--color-accent-green);
+}
+
+.hero__subTitle {
+    color: var(--font-color-white);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 5%;
+    margin-top: 37px;
+}
+
+.hero__subTitle span {
+    display: block;
+    width: fit-content;
+    background-color: var(--color-accent-green);
+    padding: 9px 21px;
+    margin-top: 21px;
+}
+
+.slogan {
+    position: relative;
+    margin-top: 120px;
+    padding-bottom: 110px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slogan::before {
+    content: 'Garden\ASalad';
+    color: #6767674D;
+    font-family: var(--en-font-reross);
+    font-weight: 400;
+    /* font-size: clamp(120px, 20vw, 280px); */
+    font-size: 17.5rem;
+    line-height: 0;
+    white-space: nowrap;
+    position: absolute;
+    top: 76%;
+    left: -15px;
+    z-index: -1;
+}
+
+.slogan__main {
+    color: var(--font-color-white);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+
+.slogan__main br {
+    display: contents;
+}
+
+.slogan__wrapper {
+    margin-inline: auto;
+    margin-top: 48px;
+    width: 493px;
+}
+
+.slogan__text {
+    color: var(--font-color-white);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03rem;
+    text-align: center;
+}
+
+.slogan__text:nth-of-type(2),
+.slogan__text:nth-of-type(3) {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__img img {
+        width: 82.133vw;
+        height: auto;
+    }
+
+    .title__wrapper {
+        top: 55%;
+        left: 5%;
+    }
+
+    .hero__title {
+        font-size: clamp(2.25rem, 1.534rem + 3.05vw, 3rem);
+    }
+    
+    .hero__subTitle {
+        font-weight: 500;
+        font-size: clamp(var(--en-sp-size-base),2.5vw,2.25rem);
+        line-height: 100%;
+        margin-top: 15px;
+    }
+    
+    .hero__subTitle span {
+        display: block;
+        width: fit-content;
+        background-color: var(--color-accent-green);
+        padding: 4px 8px 7px 3px;
+        margin-top: 5px;
+    }
+
+    .slogan {
+        margin-top: 48px;
+        padding-bottom: 64px;
+    }
+    
+    .slogan::before {
+        content: 'Garden\ASalad';
+        white-space: pre;
+        font-size: 6.875rem;
+        line-height: 0.8;
+        text-align: right;
+        position: absolute;
+        top: 52%;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .slogan__main {
+        font-size: 20px;
+    }
+
+    .slogan__main br {
+        display: block;
+    }
+    
+    .slogan__wrapper {
+        width: 100%;
+        margin-inline: auto;
+        margin-top: 24px;
+
+        padding: 0 32px;
+    }
+    
+    .slogan__text {
+        font-size: var(--ja-sp-size-base);
+        line-height: 1.5;
+        letter-spacing: 0.03rem;
+        text-align: center;
+    }
+    
+    .slogan__text:nth-of-type(2),
+    .slogan__text:nth-of-type(3) {
+        margin-top: 30px;
+    }
+
+    .slogan__text br {
+        display: contents;
+    }
+}
+/* ========== hero end ========== */
