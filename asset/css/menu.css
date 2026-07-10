@@ -1,0 +1,662 @@
+@charset "UTF-8";
+.menu {
+    background-color: var(--color-base-black);
+    /* margin-top: 31.25%; */
+    /* padding-bottom: 172px; */
+    position: relative;
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    inset: 72px;
+    border: 1px solid var(--font-color-white);
+    pointer-events: none;
+}
+
+.section__title-wrapper--menu {
+    /* margin: 130px 0 96px; */
+    padding: 152px 0 64px;
+}
+
+.title__txt--menu,
+.title__main--menu {
+    color: var(--font-color-white);
+}
+
+.section__title--menu {
+    text-align: center;
+    position: relative;
+}
+
+.section__title--menu::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    right: 0;
+    left: 0;
+    bottom: -32px;
+    margin: 0 auto;
+}
+
+.menu__container {
+    padding: 0 140px 170px;
+}
+
+.nutrients {
+    text-align: center;
+}
+
+.nutrients__text {
+    color: var(--font-color-white);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.03rem;
+}
+
+/* ===============recommend start=============== */
+.menu__card-wrapper--recommend {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+    align-items: center;
+    margin-inline: auto;
+    width: fit-content;
+}
+
+
+.menu__img--recommend {
+    position: relative;
+    z-index: 1;
+}
+
+.menu__img--recommend img {
+    max-width: 451px;
+    height: auto;
+}
+
+.menu__caption--recommend {
+    background-color: var(--color-main-white);
+    width: 41.111vw;
+    height: auto;
+    padding-bottom: 45px;
+
+    position: relative;
+
+    margin-left: -90px;
+    bottom: -10px;
+}
+
+.menu__caption--recommend::before {
+    content: "";
+    position: absolute;
+    inset: 13px;
+    border: 1px solid var(--color-base-black);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.menu__caption-detial {
+    background-color: var(--color-accent-green);
+    padding: 9px 51px 14px;
+    width: fit-content;
+    text-align: center;
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.detail__text-en {
+    color: var(--font-color-white);
+    font-family: var(--en-font-satisfy);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.03rem;
+}
+
+.detail__text-ja {
+    color: var(--font-color-white);
+    font-family: var(--font-color-white);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.03rem;
+     margin-top: 10px
+}
+
+.menu__description--recommend {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.menu__name--recommend {
+    color: var(--font-color-black);
+    font-family: var(--font-color-white);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    width: 292px;
+    margin-inline: auto;
+}
+
+.menu__price--recommend {
+    color: var(--font-color-black);
+    font-family: var(--en-font-reross);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+
+    margin-top: 30px;
+}
+
+.menu__price--recommend span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+.menu__price--recommend span:nth-of-type(2) {
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+.menu__nutrients--recommend {
+    color: var(--font-color-black);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.03rem;
+
+    margin-top: 40px;
+}
+
+/* ===============recommend end=============== */
+
+.menu__card--sub {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 58px;
+}
+
+
+.menu__img--sub {
+    position: relative;
+    z-index: 1;
+}
+
+.menu__img--sub img {
+    width: 417px;
+    height: auto;
+    margin-inline: auto;
+}
+
+.menu__card--sub
+.menu__card-wrapper--sub:nth-of-type(2)
+.menu__img--sub img {
+    width: 427px;
+    height: auto;
+    margin-right: 55px;
+    
+}
+
+.menu__caption--sub {
+    background-color: var(--color-main-white);
+    width: fit-content;
+    height: 280px;
+    padding: 76px 65px 38px;
+
+    position: relative;
+    margin-top: -75px;
+}
+
+.menu__card--sub
+.menu__card-wrapper--sub:nth-of-type(2)
+.menu__caption--sub {
+    margin-top: -70px
+}
+
+.menu__caption--sub::before {
+    content: "";
+    position: absolute;
+    inset: 13px;
+    border: 1px solid var(--color-base-black);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.menu__description--sub {
+    text-align: center;
+}
+
+.menu__name--sub {
+    color: var(--font-color-black);
+    font-family: var(--font-color-white);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-inline: auto;
+}
+
+.menu__price--sub {
+    color: var(--font-color-black);
+    font-family: var(--en-font-reross);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+
+    margin-top: 30px;
+}
+
+.menu__price--sub span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+.menu__price--sub span:nth-of-type(2) {
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+.menu__nutrients--sub {
+    color: var(--font-color-black);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.03rem;
+
+    margin-top: 40px;
+}
+
+/* =====================================================
+instagram
+========================================================*/
+.menu__instagram {
+    background-color: var(--color-main-white);
+    width: fit-content;
+    padding: 0 54px 36px;
+    margin: 80px auto 0;
+
+    position: relative;
+}
+
+.menu__instagram::before {
+    content: "";
+    position: absolute;
+    inset: 13px;
+    border: 1px solid var(--color-base-black);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.menu__instagram-title {
+    background-color: var(--color-accent-green);
+    width: fit-content;
+    height: auto;
+    padding: 18px 107px;
+    margin-inline: auto;
+
+    position: relative;
+}
+
+.menu__instagram-title p {
+    color: var(--font-color-white);
+    font-family: var(--en-font-reross);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.05rem;
+}
+
+.menu__instagram-heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    align-items: center;
+}
+
+.menu__instagram-heading p {
+    color: var(--font-color-black);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.05rem;
+
+}
+
+.menu__instagram-heading::after,
+.menu__instagram-heading::before {
+    content: "";
+    border: 1px solid #333333;
+    height: 35px;
+}
+
+.menu__instagram-heading::after {
+    margin-left: 16px;
+    transform: rotate(30deg);
+}
+
+.menu__instagram-heading::before {
+    margin-right: 16px;
+    transform: rotate(-30deg);
+}
+
+.instagram__list {
+    display: flex;
+    gap: 16px;
+    margin-top: 31px;
+}
+
+.instagram__img img {
+    width: 231px;
+}
+
+.instagram__id {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.instagram__id p {
+    color: var(--font-color-black);
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.instagram__more {
+    display: flex;
+    width: fit-content;
+    margin: 26px auto 0;
+    align-items: center;
+    border: 1px solid var(--font-color-black);
+    padding: 17px 32px 17px 58px;
+    background-color: var(--color-main-white);
+    color: var(--font-color-black);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.instagram__more a {
+    display: block;
+    font-family: var(--ja-font-notoSansJp);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.03rem;
+    color: inherit;
+}
+
+.instagram__more::after {
+    color: inherit;
+    content: '\f08e';
+    font-family: 'Font Awesome 7 Free';
+    font-weight: 900;
+    margin-left: 23px;
+    transition: color 0.3s;
+}
+
+.instagram__more:hover {
+    background-color: var(--color-base-black);
+    border-color: var(--font-color-white);
+    color: var(--font-color-white);
+}
+
+/* 1024px sp */
+@media screen and (max-width: 1024px) {
+    .menu::before {
+        inset: 24px 16px;
+    }
+
+    .section__title-wrapper--menu {
+        /* margin: 130px 0 96px; */
+        padding: 56px 0 60px;
+    }
+
+    .nutrients__text {
+        font-size: var(--ja-sp-size-base);
+    }
+
+    .menu__container {
+        padding: 0 0 56px;
+    }
+/* ===============recommend start=============== */
+
+    .menu__card-wrapper--recommend {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        align-items: center;
+    }
+
+    .menu__img--recommend {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .menu__img--recommend img {
+        width: 318px;
+        height: auto;
+        margin-right: 15px;
+    }
+    
+    .menu__caption--recommend {
+        width: clamp(18.75rem, 7.916rem + 46.22vw, 37.5rem);
+        padding-bottom: 42px;
+    
+        margin-left: 0;
+        margin-top: -42px;
+        bottom: auto;
+    }
+    
+    .menu__caption-detial {
+        padding: 45px 50px 16px;
+    }
+    
+    .detail__text-en {
+        font-size: 12px;
+    }
+    
+    .detail__text-ja {
+        font-size: 18px;
+        margin-top: 5px
+    }
+    
+    .menu__description--recommend {
+        text-align: center;
+    }
+    
+    .menu__name--recommend {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    
+    .menu__price--recommend {
+        font-size: 30px;
+    }
+    
+    .menu__price--recommend span {
+        font-size: 18px;
+    }
+    
+    .menu__price--recommend span:nth-of-type(2) {
+        font-size: 12px;
+    }
+    
+    .menu__nutrients--recommend {
+        font-size: 14px;
+    }
+
+    .menu__description--recommend,
+    .menu__price--recommend,
+    .menu__nutrients--recommend {
+        margin-top: 16px;
+    }
+
+    /* ===============recommend end=============== */
+    .menu__card--sub {
+        flex-direction: column;
+        gap: 48px;
+        margin-top: 48px;
+    }
+
+    .menu__card-wrapper--sub {
+        margin-inline: auto;
+    }
+/*  */
+    .menu__img--sub img {
+        width: 305px;
+        height: auto;
+    }
+
+    .menu__img--sub img:nth-of-type(2) {
+        margin-left: -8px;
+    }
+
+    .menu__card--sub
+    .menu__card-wrapper--sub:nth-of-type(2)
+    .menu__img--sub img {
+        width: 308px;
+        height: auto;
+        margin-inline: auto;
+        transform: translateX(-9px);
+    }
+/*  */
+
+    .menu__caption--sub {
+        width: clamp(18.75rem, 7.916rem + 46.22vw, 37.5rem);
+        padding: 76px 0 38px;
+        height: 223px;
+        position: relative;
+        margin-top: -55px;
+    }
+
+    .menu__card--sub
+    .menu__card-wrapper--sub:nth-of-type(2)
+    .menu__caption--sub {
+        margin-top: -55px
+    }
+
+    .menu__caption--sub::before {
+        inset: 10px;
+    }
+
+    .menu__name--sub {
+        font-size: var(--ja-sp-size-large);
+    }
+
+    .menu__price--sub {
+        font-size: 30px;
+    }
+
+    .menu__price--sub span {
+        font-size: 18px;
+    }
+
+    .menu__price--sub span:nth-of-type(2) {
+        font-size: 12px;
+    }
+
+    .menu__nutrients--sub {
+        font-size: var(--ja-sp-size-medium);
+    }
+
+    .menu__price--sub,
+    .menu__nutrients--sub {
+        margin-top: 20px;
+    }
+
+    /* =====================================================
+    instagram
+    ========================================================*/
+    .menu__instagram {
+        background-color: var(--color-main-white);
+        width: clamp(18.75rem, 7.916rem + 46.22vw, 37.5rem);
+        padding: 0 20px 34px;
+        margin: 48px auto 0;
+
+        position: relative;
+    }
+
+    .menu__instagram::before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+    }
+
+    .menu__instagram-title {
+        background-color: var(--color-accent-green);
+        width: fit-content;
+        height: auto;
+        padding: 10px 34px;
+        margin-inline: auto;
+
+        position: relative;
+    }
+
+    .menu__instagram-title p {
+        font-size: 24px;
+    }
+
+    .menu__instagram-heading {
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+        align-items: center;
+    }
+
+    .menu__instagram-heading p {
+        font-size: var(--ja-sp-size-base);
+    }
+
+    .menu__instagram-heading::after,
+    .menu__instagram-heading::before {
+        display: none;
+    }
+
+    .instagram__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: fit-content;
+        margin: 24px auto 0;
+    }
+
+    .instagram__img img {
+        min-width: 125px;
+    }
+
+    .instagram__id {
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .instagram__id p {
+        font-size: 16px;
+    }
+
+    .instagram__more {
+        margin: 24px auto 0;
+        padding: 16px 17px 17px 32px;
+    }
+}
